@@ -13,7 +13,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="function.js"></script>
+  <script type="text/javascript" src="../explore.js"></script>
 
   <title>FOODme</title>
 </head>
@@ -63,17 +63,17 @@
 			</form>
 			<button id = "spin">Explore the Crave</button>-->
       <div id = "container">
-         <!--{{#each dishes}}
+
       <div class = "item">
-        <img src = '{{imgURL}}' id = "dish_img"/>
-        <p>{{name}}</p>
+        <img src = '/' id = "dish_img"/>
+        <p id = "dish_id">blah</p>
       </div>
-    {{/each}}-->
 
-    <div class = "item">
-      <img src = '{{dishes.imgURL}}'/>
-    </div>
-
+      <div id = "swipe">
+        <button class = "move" id = "prev"> << </button>
+        <a href = "#bmk_confirm" id = "bmk" data-rel = "popup"><button id = "book_button">Bookmark</button></a>
+        <button class = "move" id = "next"> >> </button>
+      </div>
 
 	</div> <!--end of container-->
 
