@@ -44,5 +44,6 @@ app.get('/bookmarks', bookmarks.view);
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
   console.log('Directory: ' + (path.join(__dirname, 'static')));
-
+  console.log(bookmarks);
+  console.log(index);
 });
