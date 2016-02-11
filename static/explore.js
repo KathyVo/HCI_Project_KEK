@@ -46,7 +46,23 @@ $(document).ready(function() {
             var im = curr.imgURL;
             $('#dish_img').attr('src', im);
             console.log(dishes.length);
-        })
+        });
+
+
+        //push new dish into your  bookmarks
+        $('#book_button').click(function() { 
+
+            var newBMK = { 
+                'name' : curr.name, 
+                'restaurant' : curr.restaurant, 
+                'imgURL' : curr.imgURL,
+                'address' : 'SD, CA'
+            }
+            console.log(newBMK);
+
+            dishes.dishes.push(newBMK);
+            console.log(dishes);
+        });
 
 })
  
