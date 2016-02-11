@@ -51,28 +51,30 @@
 
 .ups div { 
 	display: inline-block;
-	background-color: green;
-	color: white;
-	width: 100px;
+
+	color: black;
+	width: 50px;
 }
 
-#u { 
-	background-color: green;
-	color: white;
-	width: 150px;
-	height: 20px;
-}
 
-#d { 
-	background-color: red;
-	color: white;
-	width: 150px;
-	height: 20px;
+
+#dish_img { 
+	height: 200px;
+	width: 200px;
 }
 
 .downs div { 
 	display: inline-block;
-	background-color: red;
-	color: white;
-	width: 100px;
+
+	color: black;
+	width: 50px;
+}
+
+#dishIMG { 
+	height: 250px;
+	width: 250px;
+}
+
+.thumbs { 
+	width: 20px;
 }

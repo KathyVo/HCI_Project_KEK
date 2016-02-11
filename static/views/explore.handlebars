@@ -6,16 +6,14 @@
 
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <!--for three emojis in rating-->
-    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 
   <link type = "text/css" rel="stylesheet" href="style.css">
   <link type = "text/css" rel="stylesheet" href="css/navbarstyle.css">
-  <link type = "text/css" rel="stylesheet" href="explore.css">
+  <link type = "text/css" rel="stylesheet" href="../explore.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="function.js"></script>
+  <script type="text/javascript" src="../explore.js"></script>
 
   <title>FOODme</title>
 </head>
@@ -57,49 +55,27 @@
       </div>
     </nav>
 
-
    <div id = "container">
 
-    <!--go back to explore food-->
-    <div>
-      <a href = "#bmk_confirm" id = "bmk" data-rel = "popup"><button>Bookmark</button></a>
-    </div>
-    <div id = "bmk_confirm" data-role="popup"> <p>Dish Bookmarked!</p></div>
-    <!--review page for specific dish after clicking on image-->
-    <div id = "dish_info">
-      <h3>RESTAURANT NAME</h3>
-      <img src = "http://3.imimg.com/data3/XF/CY/MY-7061062/dish-plate-250x250.png" id = "dishpic"/>
-      <h3>Yummy Dish</h3>
+		<div id = "finder">
+			<!--<form>
+				<input type = "search" value = "Search"/>
+			</form>
+			<button id = "spin">Explore the Crave</button>-->
+      <div id = "container">
 
-      <div id = "faces">
-          <div><i class = "em em-disappointed" id = "ab"></i> 6</div>
-          <div><i class = "em em-confused" id = "ab"></i> 6</div>
-          <div><i class = "em em-smiley" id = "ab"></i> 6</div>
+      <div class = "item">
+        <img src = '/' id = "dish_img"/>
+        <p id = "dish_id">blah</p>
       </div>
 
-      <!--dislay good and bad hashtags-->
-      <div id = "hashtags">
-        <div id = "ht_type">
-          <div class = "ups" id = "u">UPS</div>
-          <div class = "downs" id = "d">DOWNS</div>
-        </div>
-        <div class = "ups">
-          <div>Savory</div>
-          <div>Cheesy</div>
-          <div>Yummy</div>
-        </div>
-        <div class = "downs">
-          <div>stinky</div>
-          <div>spicy</div>
-          <div>weird</div>
-        </div>
-      </div> <!--end of hashtag ratings-->
-    </div>
-    <div id = "rate_btn">
-        <button>RATE IT</button>
-    </div>
+      <div id = "swipe">
+        <button class = "move" id = "prev"> << </button>
+        <a href = "#bmk_confirm" id = "bmk" data-rel = "popup"><button id = "book_button">Bookmark</button></a>
+        <button class = "move" id = "next"> >> </button>
+      </div>
 
-  </div> <!--end of container-->
+	</div> <!--end of container-->
 
   </body>
 </html>

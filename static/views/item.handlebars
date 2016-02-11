@@ -15,7 +15,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="function.js"></script>
+  <script type="text/javascript" src="../dish.js"></script>
 
   <title>FOODme</title>
 </head>
@@ -46,7 +46,7 @@
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;My Profile<span class="caret"></span></a>
               <ul class="dropdown-menu" style="">
-                <li><a href="bookmarks.html" class="dropdown-item"><span class="glyphicon glyphicon-bookmark"></span>&nbsp;Bookmarks</a></li>
+                <li><a href="bookmarks.handlebars" class="dropdown-item"><span class="glyphicon glyphicon-bookmark"></span>&nbsp;Bookmarks</a></li>
                 <li><a href="#" class="dropdown-item"><i class="fa fa-users"></i>&nbsp;Friends</a></li>
                 <li><a href="#" class="dropdown-item"><span class="glyphicon glyphicon-cog"></span>&nbsp; Settings</a></li>
                 <li><a href="login.html" class="dropdown-item"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
@@ -67,28 +67,27 @@
     <div id = "bmk_confirm" data-role="popup"> <p>Dish Bookmarked!</p></div>
     <!--review page for specific dish after clicking on image-->
     <div id = "dish_info">
-      <h3>RESTAURANT NAME</h3>
-      <img src = "http://3.imimg.com/data3/XF/CY/MY-7061062/dish-plate-250x250.png" id = "dishpic"/>
-      <h3>Yummy Dish</h3>
+      <h3 id = "restaurant">RESTAURANT NAME</h3>
+      <img src = "/" id = 'dishIMG'/>
+      <h3 id = "dish_name">Yummy Dish</h3>
 
       <div id = "faces">
-          <div><i class = "em em-disappointed" id = "ab"></i> 6</div>
-          <div><i class = "em em-confused" id = "ab"></i> 6</div>
-          <div><i class = "em em-smiley" id = "ab"></i> 6</div>
+          <div><i class = "em em-disappointed" id = "ab"></i><p  id = "dis"></p></div>
+          <div><i class = "em em-confused" id = "ab"></i> <p  id = "meh"></p></div>
+          <div><i class = "em em-smiley" id = "ab"></i><p  id = "yay"></p></div>
       </div>
 
       <!--dislay good and bad hashtags-->
       <div id = "hashtags">
-        <div id = "ht_type">
-          <div class = "ups" id = "u">UPS</div>
-          <div class = "downs" id = "d">DOWNS</div>
-        </div>
+      
         <div class = "ups">
+          <div><i class = "em em-thumbsup" class = "thumbs"></i></div>
           <div>Savory</div>
           <div>Cheesy</div>
           <div>Yummy</div>
         </div>
         <div class = "downs">
+          <div><i class = "em em-thumbsdown" class = "thumbs"></i></div>
           <div>stinky</div>
           <div>spicy</div>
           <div>weird</div>
