@@ -5,7 +5,7 @@ $(document).ready(function() {
     var dishes;
     //for current dish 
     var curr;
-    var i = 3; //tracker number
+    var i = 5;
 
     //get JSON data with first 
          $.getJSON('explore.json', function(data) {
@@ -19,6 +19,9 @@ $(document).ready(function() {
         var im = curr.imgURL;
         var place = curr.restaurant;
         $('#dishIMG').attr('src', im);
+        $('#dis').text(curr.dis);
+        $('#meh').text(curr.meh);
+        $('#yay').text(curr.yay);
         $('#restaurant').text(place);
         $('#dish_name').text(name);
 

@@ -58,6 +58,7 @@ $(document).ready(function() {
                 'imgURL' : curr.imgURL,
                 'address' : 'SD, CA'
             }
+            console.log("BMK push testing...")
             console.log(newBMK);
 
             dishes.dishes.push(newBMK);
