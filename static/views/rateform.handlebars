@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
+	<head>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel = "stylesheet" href = "css/rate.css">
+		<!--for three emojis in rating-->
+		<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <!--for three emojis in rating-->
-    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 
   <link type = "text/css" rel="stylesheet" href="style.css">
+  <link type = "text/css" rel="stylesheet" href="css/bookmarks.css">
   <link type = "text/css" rel="stylesheet" href="css/navbarstyle.css">
   <link type = "text/css" rel="stylesheet" href="explore.css">
 
@@ -18,12 +20,11 @@
   <script type="text/javascript" src="../explore.js"></script>
 
   <title>FOODme</title>
-</head>
+	</head>
+	
+	<body>
 
-  <body>
-
-    <!-- Menu Bar -->
-    <nav class="navbar navbar-inverse">
+		<nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -55,50 +56,39 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> <!--end of menu-->
+		<form>
+			<h4>Dish Rating</h4>
+				<h5 id = "dname"></h5> 
+				<h5 id = 'drest'></h5>
+				<p>This dish made me feel...</p>
+			<!--reaction to dishes-->
+			<div class = "emoji">
+				<i class = "em em-disappointed" id = "ab"></i>
+				Disappointed
+			</div>
+			<div class = 'emoji'>
+				<i class = "em em-confused" id = "ab"></i>
+				Meh
+			</div>
+			<div class = 'emoji'>
+				<i class = "em em-smiley" id = "ab"></i>
+				Happy
+			</div>
+			<!--hashtag ratings-->
+			<div id = "up_tags">
+				<p>UPS: list three good things about this dish, separate each using a common</p> <i>example: #awesome, #yummy</i>
+				<input type = "text" id = "ui"></input>
+			</div>
+			<div id = "down_tags">
+				<p>DOWNS: list three bad things about this dish, separate each using a common</p> <i>example: #disgusting, #spicy</i>
+				<input type = "text" id = "di"></input>
+			</div>
 
-
-   <div id = "container">
-
-    <!--go back to explore food-->
-    <div>
-      <a href = "#bmk_confirm" id = "book_button" data-rel = "popup"><button>Bookmark</button></a>
-    </div>
-
-    <!--review page for specific dish after clicking on image-->
-    <div id = "dish_info">
-      <h3 id = "restaurant"></h3>
-      <img src = "/" id = 'dishIMG'/>
-      <h3 id = "dish_name"></h3>
-
-      <div id = "faces">
-          <div><i class = "em em-disappointed" id = "ab"></i><p  id = "dis"></p></div>
-          <div><i class = "em em-confused" id = "ab"></i> <p  id = "meh"></p></div>
-          <div><i class = "em em-smiley" id = "ab"></i><p  id = "yay"></p></div>
-      </div>
-
-      <!--dislay good and bad hashtags-->
-      <div id = "hashtags">
-      
-        <div class = "ups">
-          <div><i class = "em em-thumbsup" class = "thumbs"></i></div>
-          <div id = "u1"></div>
-          <div id = "u2"></div>
-          <div id = "u3"></div>
-        </div>
-        <div class = "downs">
-          <div><i class = "em em-thumbsdown" class = "thumbs"></i></div>
-          <div id = "d1"></div>
-          <div id = "d2"></div>
-          <div id = "d3"></div>
-        </div>
-      </div> <!--end of hashtag ratings-->
-    </div>
-    <div id = "rate_btn">
-        <a href = '/rateDish'><button>RATE IT</button></a>
-    </div>
-
-  </div> <!--end of container-->
-
-  </body>
+			<div id = "submit">
+				<button id = "submitBtn">SUBMIT</button>
+			</div>
+			
+		</form>
+	</body>
 </html>
