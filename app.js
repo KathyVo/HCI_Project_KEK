@@ -13,6 +13,8 @@ var homepage = require('./static/routes/homepage');
 var bookmarks = require('./static/routes/bookmarks');
 var exp = require('./static/routes/exp');
 var item = require('./static/routes/item');
+var rate = require('./static/routes/rating');
+
 // Example route
 // var user = require('./routes/user');
 
@@ -44,6 +46,7 @@ app.get('/homepage', homepage.view);
 app.get('/bookmarks', bookmarks.view);
 app.get('/exp', exp.view);
 app.get('/item', item.view);
+app.get('/rateDish', rate.view);
 // Example route
 // app.get('/users', user.list);
 

@@ -8,7 +8,13 @@
 			"imgURL": "food/burger.jpg", 
 			"dis": "6",
 			"meh": "5",
-			"yay": "12"
+			"yay": "12", 
+			"u1": "savory", 
+			"u2": "foodgasm", 
+			"u3": "pattyonfleek", 
+			"d1": "n", 
+			"d2": "o", 
+			"d3": "p"
 		},
 		{ 
 			"id": "1",
@@ -17,7 +23,10 @@
 			"imgURL": "food/cookie_sandwich.jpeg",
 			"dis": "6",
 			"meh": "5",
-			"yay": "12"
+			"yay": "12",
+			"u1": "brainfreeze", 
+			"u2": "sweet", 
+			"u3": "sugaroverload" 
 		},
 		{ 
 
@@ -27,7 +36,10 @@
 			"imgURL": "food/curry.jpg",
 			"dis": "2",
 			"meh": "8",
-			"yay": "12"
+			"yay": "12", 
+			"u1": "hot", 
+			"u2": "umami", 
+			"u3": "wonderful" 
 		},
 		{ 
 
@@ -37,7 +49,10 @@
 			"imgURL": "food/steak.jpg",
 			"dis": "6",
 			"meh": "5",
-			"yay": "12"
+			"yay": "12", 
+			"u1": "delicious", 
+			"u2": "savory", 
+			"u3": "OMFG"
 		},
 		{ 
 
@@ -47,7 +62,11 @@
 			"imgURL": "food/ribs.jpg", 
 			"dis": "6",
 			"meh": "5",
-			"yay": "12"
+			"yay": "12", 
+			"u1": "saucy", 
+			"u2": "best", 
+			"u3": "roast" 
+			
 		},
 		{ 
 
@@ -57,7 +76,10 @@
 			"imgURL": "food/pizza.jpg",
 			"dis": "6",
 			"meh": "5",
-			"yay": "12"
+			"yay": "12", 
+			"u1": "cheesy", 
+			"u2": "warm", 
+			"u3": "happy"
 		}
 	]
 }

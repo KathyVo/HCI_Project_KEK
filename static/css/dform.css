@@ -1,0 +1,33 @@
+body { 
+}
+
+form { 
+	width: 200px;
+	padding: 5px;
+	padding-left: 10px;
+	height: 520px;
+	border: 1px solid black;
+	margin: auto;
+
+}
+
+h6 { 
+
+}
+
+#btn_options { 
+	margin-top: 5px;
+	text-align: center;
+}
+
+#req { 
+	color: red;
+	line-height: 0px;
+}
+form h4 { 
+	line-height: 0px;
+	text-align: left;
+}
+
+
+
