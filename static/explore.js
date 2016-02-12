@@ -25,6 +25,9 @@ $(document).ready(function() {
         var im = dishes.dishes[i].imgURL;
         $('#dish_img').attr('src', im);
         $('item').text(name);
+
+        //for item review page 
+           loadDishReview();
 });
 
           //get JSON data of dishes  
@@ -79,10 +82,28 @@ $(document).ready(function() {
 
 
         //takes you to item review page
-        $('#dish_img').click(function(e) { 
-
-        
-        });
+        /*$('#dish_img').click(function() { 
+            curr = dishes.dishes[3]; 
+            console.log(i);
+            console.log("dish review for..." + curr);
+            var im = "../" + curr.imgURL;
+            console.log(im);
+            //$('#dishIMG').attr('src', '../food/burger.jpg');
+            $('#dis').text(curr.dis);
+            $('#meh').text(curr.meh);
+            $('#yay').text(curr.yay);
+            $('#u1').text(curr.u1);
+             $('#u2').text(curr.u2);
+              $('#u3').text(curr.u3);
+              $('#d1').text(curr.d1);
+             $('#d2').text(curr.d2);
+              $('#d3').text(curr.d3);
+            $('#restaurant').text(curr.restaurant);
+            $('#dish_name').text(curr.name);
+            /*$('#dname').html(curr.name);
+            $('#drest').html(curr.restaurant);
+            console.log(curr.name);
+        });*/
 
         /*$('#bmk').click(function() { 
             console.log(bookmarks);
@@ -177,10 +198,11 @@ function missing() {
 
 function loadDishReview() { 
         
-     curr = dishes.dishes[i]; 
+            curr = dishes.dishes[i]; 
             console.log(i);
-            console.log("name variable testing..." + curr);
-            var im = curr.imgURL;
+            console.log("dish review for..." + curr);
+            var im = "../" + curr.imgURL;
+            console.log(im);
             $('#dishIMG').attr('src', im);
             $('#dis').text(curr.dis);
             $('#meh').text(curr.meh);
@@ -193,8 +215,8 @@ function loadDishReview() {
               $('#d3').text(curr.d3);
             $('#restaurant').text(curr.restaurant);
             $('#dish_name').text(curr.name);
-            /*$('#dname').html(curr.name);
-            $('#drest').html(curr.restaurant);*/
+            $('#dname').html(curr.name);
+            $('#drest').html(curr.restaurant);
             console.log(curr.name);
 }
  
