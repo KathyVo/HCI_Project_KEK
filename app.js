@@ -9,6 +9,7 @@ var path = require('path');
 var handlebars = require('express3-handlebars')
 
 var index = require('./static/routes/index');
+var homepage = require('./static/routes/homepage');
 var bookmarks = require('./static/routes/bookmarks');
 var exp = require('./static/routes/exp');
 var item = require('./static/routes/item');
@@ -39,6 +40,7 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', index.view);
+app.get('/homepage', homepage.view);
 app.get('/bookmarks', bookmarks.view);
 app.get('/exp', exp.view);
 app.get('/item', item.view);
