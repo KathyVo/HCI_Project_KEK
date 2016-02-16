@@ -1,0 +1,18 @@
+.ST_Slideshow { width:408px; height:232px; border:1px solid #ccc; background:#f6f9fc; margin:0px 0px 0px 5px; padding:0px; position:relative; font-family:arial; font-size:14px; }
+.ST_Slideshow .slide { margin:8px 8px 6px; position:absolute; top:0px; left:0px; z-index:0; list-style:none;padding:0px; }
+.ST_Slideshow .slide a { height:194px; width:390px; border:1px solid #ccc; display:block; }
+.ST_Slideshow .slide a img { height:194px; width:390px; border:0px; }
+.ST_Slideshow .slide span { position: absolute; padding: 10px; width: 371px; background-color: #000; filter: alpha(opacity=70); -moz-opacity: 0.7; -khtml-opacity: 0.7; opacity: 0.7; display: none; bottom: 0; left: 0; cursor: hand; cursor: pointer; }
+.ST_Slideshow .slide span div { color: #fff; }
+.ST_Slideshow .slide span div.caption { font-size:1.35em; font-weight:900; }
+.ST_Slideshow .slide span div.subcaption { font-size:0.8em; text-align:right; color:#ccc; }
+.ST_Slideshow .next { z-index:99; }
+.ST_Slideshow .show { z-index:100; }
+
+.ST_Slideshow .slideSelect { position:absolute; bottom:5px; left:8px; height:18px; }
+.ST_Slideshow .slideSelect div { height:18px; width:18px; background:#e4f0f6; color:#2368ab; float:left; margin:0px 3px 0px 0px; text-align:center; line-height:18px; font-size:0.85em; font-weight:900; cursor: hand; cursor: pointer; }
+.ST_Slideshow .slideSelect div.selected { background:#94c6ed; color:#FFF;  }
+.ST_Slideshow .slideSelect span.pause { background:url(pause_play.png) top right; height:18px; width:18px; color:#2368ab; float:left; margin:0px 3px 0px 0px; text-align:center; line-height:18px; font-size:0.85em; font-weight:900; cursor: hand; cursor: pointer; }
+.ST_Slideshow .slideSelect span.play { background:url(pause_play.png) top left; height:18px; width:18px; color:#2368ab; float:left; margin:0px 3px 0px 0px; text-align:center; line-height:18px; font-size:0.85em; font-weight:900; cursor: hand; cursor: pointer; }
+.ST_Slideshow .prev-next { position:absolute; bottom:10px; right:11px; font-size:0.85em; color:#164f9e; font-weight:900; }
+.ST_Slideshow .prev-next span { cursor: hand; cursor: pointer; }

@@ -1,0 +1,14 @@
+{ 
+	"myProfile": [
+
+		{
+			"name": "Team Kek",
+			"city": "San Diego, CA",
+			"rank": "Member", 
+			"myDishes": "0",
+			"friends": "0", 
+			"bookmarks": "tbd"
+		}
+
+	]
+}
